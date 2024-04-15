@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Lottery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader"></div>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+
+    <div class="slot-machine">
+        <div class="reels">
+            <div class="reel" id="reel1">$</div>
+            <div class="reel" id="reel2">$</div>
+            <div class="reel" id="reel3">$</div>
+            <div class="reel" id="reel4">$</div>
+            <div class="reel" id="reel5">$</div>
+            <div class="reel" id="reel6">$</div>
+            <div class="reel" id="reel7">$</div>
+        </div>
+        <div class="input-frame">
+            <div class="numbers">
+                <input type="number" class="number-input" id="number1" placeholder="Number 1" min="1" max="36">
+                <input type="number" class="number-input" id="number2" placeholder="Number 2" min="1" max="36">
+                <input type="number" class="number-input" id="number3" placeholder="Number 3" min="1" max="36">
+                <input type="number" class="number-input" id="number4" placeholder="Number 4" min="1" max="36">
+                <input type="number" class="number-input" id="number5" placeholder="Number 5" min="1" max="36">
+                <input type="number" class="number-input" id="number6" placeholder="Number 6" min="1" max="36">
+                <input type="number" class="number-input" id="number7" placeholder="Number 7" min="1" max="36">
+            </div>
+            <button onclick="checkNumbers()">Check Numbers</button>
+            <!-- Add an element to display result -->
+            <p id="result"></p>
+        </div>
+        
+        
+        <button onclick="generateNumbers()">Spin</button>
+        
+        
+    
+    <script src="lottery.js"></script>
+</body>
+</html>
