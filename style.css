@@ -1,3 +1,16 @@
+.title-frame {
+    border: 2px solid #000; /* Add border */
+    padding: 10px; /* Add padding */
+    margin-bottom: 20px; /* Add margin to separate from other elements */
+}
+
+#title {
+    margin: 0; /* Remove default margin */
+}
+
+/* Rest of your CSS styles */
+
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;

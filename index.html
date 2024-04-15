@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 id="title">Slot Machine Lottery</h1>
     <div class="loader"></div>
 
     <div id="loader-wrapper">
@@ -44,5 +45,13 @@
         
     
     <script src="lottery.js"></script>
+    <script>
+        // Function to change the title color every three seconds
+        setInterval(function() {
+            const title = document.getElementById('title');
+            const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16); // Generate random color
+            title.style.color = randomColor;
+        }, 3000); // Change color every three seconds
+    </script>
 </body>
 </html>
